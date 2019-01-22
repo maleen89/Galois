@@ -183,7 +183,7 @@ private:
    */
   void pageInByNode(size_t id, size_t total, size_t sizeofEdgeData);
 
-protected:
+public:
   /**
    * Copies graph connectivity information from arrays. Returns a pointer to
    * array to populate with edge data.
@@ -208,7 +208,6 @@ protected:
                    uint64_t nodeOffset, uint64_t edgeOffset, bool converted,
                    int oGraphVersion = 1);
 
-public:
   /**
    * Reset the num bytes counters
    */
